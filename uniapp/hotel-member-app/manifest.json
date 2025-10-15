@@ -1,0 +1,215 @@
+{
+    "name" : "用户端",
+    "appid" : "__UNI__2019711",
+    "description" : "",
+    "versionName" : "1.0.1",
+    "versionCode" : "100",
+    "transformPx" : false,
+    "app-plus" : {
+        "statusbar" : {
+            "immersed" : false
+        },
+        /* 5+App特有相关 */
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Share" : {},
+            "VideoPlayer" : {},
+            "Payment" : {}
+        },
+        // 隐私权限
+        "privacy" : {
+            "prompt" : "template",
+            "template" : {
+                "title" : "服务协议和隐私政策",
+                "message" : "　　请你务必审慎阅读、充分理解“服务协议”和“隐私政策”各条款，包括但不限于：为了更好的向你提供服务，我们需要收集你的设备标识、操作日志等信息用于分析、优化应用性能。<br/>　　你可阅读<a href='http://qifenxiangh5.qifenxiang.shop/#/protocol?type=registration'>《服务协议》</a>和<a href='http://qifenxiangh5.qifenxiang.shop/#/protocol?type=privacy'>《隐私政策》</a>了解详细信息。如果你同意，请点击下面按钮开始接受我们的服务。",
+                "buttonAccept" : "同意",
+                "buttonRefuse" : "暂不同意",
+                "second" : {
+                    "title" : "温馨提示",
+                    "message" : "　　进入应用前，你需先同意<a  href='http://qifenxiangh5.qifenxiang.shop/#/protocol?type=registration'>《服务协议》</a>和<a href='http://qifenxiangh5.qifenxiang.shop/#/protocol?type=privacy'>《隐私政策》</a>，否则将退出应用。",
+                    "buttonAccept" : "同意并继续",
+                    "buttonRefuse" : "退出应用"
+                }
+            }
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_LOCATION_EXTRA_COMMANDS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CONTROL_LOCATION_UPDATES\"/>",
+                    "<uses-permission android:name=\"android.permission.LOCATION_HARDWARE\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a" ],
+                "autoSdkPermissions" : true,
+                "schemes" : "fire",
+                "minSdkVersion" : 21
+            },
+            "ios" : {
+                "dSYMs" : false
+            },
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wxfb49b3d02a8d164b",
+                        "appsecret" : "91460e6b55250e8c1d732b6e0e7188fa",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "ad" : {},
+                "payment" : {
+                    "weixin" : {
+                        "__platform__" : [ "android" ],
+                        "appid" : "wx4d7e52304928590d",
+                        "UniversalLinks" : ""
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx4d7e52304928590d",
+                        "UniversalLinks" : ""
+                    }
+                }
+            },
+            // "push" : {
+            //     "unipush" : {}
+            // },
+            // "maps" : {}
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/android/mipmap-hdpi/ic_launcher.png",
+                    "xhdpi" : "static/android/mipmap-xhdpi/ic_launcher.png",
+                    "xxhdpi" : "static/android/mipmap-xxhdpi/ic_launcher.png",
+                    "xxxhdpi" : "static/android/mipmap-xxxhdpi/ic_launcher.png"
+                },
+                "ios" : {
+                    "appstore" : "",
+                    "ipad" : {
+                        "app" : "",
+                        "app@2x" : "",
+                        "notification" : "",
+                        "notification@2x" : "",
+                        "proapp@2x" : "",
+                        "settings" : "",
+                        "settings@2x" : "",
+                        "spotlight" : "",
+                        "spotlight@2x" : ""
+                    },
+                    "iphone" : {
+                        "app@2x" : "",
+                        "app@3x" : "",
+                        "notification@2x" : "",
+                        "notification@3x" : "",
+                        "settings@2x" : "",
+                        "settings@3x" : "",
+                        "spotlight@2x" : "",
+                        "spotlight@3x" : ""
+                    }
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "common",
+                "alwaysShowBeforeRender" : true,
+                "waiting" : true,
+                "autoclose" : false,
+                "delay" : 0,
+                "android" : {
+                    "xxhdpi" : "E:/Android/icons/iPadLandscapeiOS56_1024x768pt.png",
+                    "xhdpi" : "E:/Android/icons/iPadLandscapeWOSBiOS56_1024x748pt@2x.png",
+                    "hdpi" : "E:/Android/icons/iPhoneXLandscapeiOS11_812x375pt@3x.png"
+                }
+            }
+        },
+        "nativePlugins" : {}
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx2691190afd3e617e",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : false,
+            "minified" : true
+        },
+        "optimization" : {
+            "subPackages" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "获取收货地址信息"
+            },
+            "scope.userFuzzyLocation" : {
+                "desc" : "你的位置信息将用于推荐附近的房源"
+            }
+        },
+        "requiredPrivateInfos" : [ "getFuzzyLocation", "chooseAddress", "choosePoi" ]
+    },
+    // "getLocation"
+    // "startLocationUpdateBackground",
+    // "startLocationUpdate"
+    "mp-alipay" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    /* h5特有相关 */
+    "h5" : {
+        "devServer" : {
+            "port" : 80, //端口号
+            "disableHostCheck" : true,
+            "proxy" : {
+                "/api/" : {
+                    "target" : "https://dulaituan.hopesfire.com", //目标接口域名
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : true // 设置支持https协议的代理
+                }
+            }
+        },
+        "domain" : "qifenxiangh5.qifenxiang.shop",
+        "router" : {
+            "mode" : "hash"
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "DC2BZ-26Z34-QEXU4-DO4MK-4BHT6-ZSFN6"
+                }
+            }
+        },
+        "title" : "酒店",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "appid" : "tt9b5cede104643bb501"
+    },
+    "vueVersion" : "2",
+    "locale" : "zh-Hans",
+    "fallbackLocale" : "zh-Hans"
+}
+/* 模块配置 *//* 应用发布信息 *//* android打包配置 *//* ios打包配置 */
+

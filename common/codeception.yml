@@ -1,0 +1,19 @@
+# @Author: Wang chunsheng  email:2192138785@qq.com
+# @Date:   2022-02-07 10:24:12
+# @Last Modified by:   Wang chunsheng  email:2192138785@qq.com
+# @Last Modified time: 2022-02-08 16:53:57
+namespace: common\tests
+actor_suffix: Tester
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+modules:
+    config:
+        Yii2:
+            configFile: 'config/codeception-local.php'

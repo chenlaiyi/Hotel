@@ -1,0 +1,107 @@
+.vscode
+# phpstorm project files
+.idea
+.svn
+.env
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+# vendor/*
+
+# ignore generated files
+
+
+!.gitkeep
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+
+/.vagrant
+
+# 缓存目录
+api/runtime/*
+swoole/runtime/*
+console/runtime/*
+admin/runtime/*
+public/runtime/*
+help/runtime/*
+public/help/assets/*
+
+# 接口目录
+api/modules/wechat/log
+api/modules/wechat/log/
+
+# 前端目录
+public/ErrorFiles
+public/u.asp
+public/.uini
+public/u.php
+public/attachment/*
+public/u.phpstorm
+!public/attachment/public
+public/node_modules
+public/admin/assets
+public/assets
+assets/*
+public/store/pro-admin/configs/config.js
+public/backend/pro-admin/configs/config.js
+
+# 公共目录
+common/config/sqlServer.php
+common/config/mongodb.php
+# 资源目录
+node_modules
+pro-admin/node_modules
+
+# 安装缓存
+console/data
+
+# 后台管理页面
+ddAdmin/node_modules/
+ddAdmin/dist/
+ddAdmin/npm-debug.log*
+ddAdmin/yarn-debug.log*
+ddAdmin/yarn-error.log*
+ddAdmin/**/*.log
+ddAdmin/dist
+ddAdmin/tests/**/coverage/
+ddAdmin/tests/e2e/reports
+ddAdmin/selenium-debug.log
+ddAdmin/.svn
+ddAdmin/# Editor directories and files
+ddAdmin/.idea
+ddAdmin/.vscode
+ddAdmin/*.suo
+ddAdmin/*.ntvs*
+ddAdmin/*.njsproj
+ddAdmin/*.sln
+ddAdmin/*.local
+ddAdmin/package-lock.json
+ddAdmin/yarn.lock
+ddAdmin/src/projects/shop/views/*
+!ddAdmin/src/projects/shop/views/default
+public/develop/assets/*
+develop/runtime/*
+develop/runtime/logs/*
+public/attachment/*
+public/nginx.htaccess
+public/admin/php_errors.log
+common/components/Qrcode/cache
+vendor/*
+127.0.0.1
+.user.ini

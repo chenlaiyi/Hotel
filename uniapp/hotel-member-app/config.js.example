@@ -1,0 +1,8 @@
+let diandi = {
+	baseUrl: "https://www.domain.cn/api",
+	bloc_id: 1,
+	store_id: 1,
+	siteUrl: "https://www.domain.cn"
+}
+
+export default diandi

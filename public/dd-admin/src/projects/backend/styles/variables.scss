@@ -1,0 +1,79 @@
+/**
+ * @Author: Wang chunsheng  email:2192138785@qq.com
+ * @Date:   2023-03-10 09:14:13
+ * @Last Modified by:   Wang chunsheng  email:2192138785@qq.com
+ * @Last Modified time: 2024-08-03 22:38:07
+ */
+ 
+$blue:#324157;
+$light-blue:#324157;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+$primary: #567feb;
+
+// sidebar
+$menuText: #99A5B3;
+$menuActiveText:#567feb;
+$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+$subMenuActiveBg:#567feb; // https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#31384B;
+$menuHover:#567feb;
+$menuHoverText:#567feb;
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#567feb;
+
+$sideBarWidth: 250px;
+$sideBarWidthOne:210px;
+// 分栏右侧
+$sideRightWidth: 140px;
+
+$sideLeftWidth: 90px;
+
+// 分栏导航颜色
+$leftmenuText:#37414b;
+$leftmenuActiveText:#37414b;
+
+$leftmenuBg:#ffffff;
+// $menuHover:#263445;
+$leftmenuHover:#567feb;
+
+$leftsubMenuBg:#ffffff;
+$leftsubMenuHover:#567feb;
+$leftsubMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+$leftsubMenuActiveBg:#567feb; // https://github.com/ElemeFE/element/issues/12951
+
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  primary: $primary;
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  menuHoverText: $menuHoverText;
+  subMenuActiveText: $subMenuActiveText;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  sideBarWidthOne: $sideBarWidthOne;
+  sideRightWidth: $sideRightWidth;
+  sideLeftWidth: $sideLeftWidth;
+  leftmenuActiveText: $leftmenuActiveText;
+  leftmenuBg: $leftmenuBg;
+  leftmenuText: $leftmenuText;
+  leftmenuHover: $leftmenuHover;
+  leftsubMenuActiveText: $leftsubMenuActiveText;
+  leftsubMenuActiveBg: $leftsubMenuActiveBg;
+  leftsubMenuBg: $leftsubMenuBg;
+  leftsubMenuHover: $leftsubMenuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

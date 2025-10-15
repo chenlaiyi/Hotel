@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "diandi-ele-form": "^0.7.5"
+  },
+  "name": "hotel.ddg.org.cn",
+  "version": "1.0.0",
+  "description": "店滴云是一款面向经营场所的智能化管理系统，专注于茶室、酒店、健身房、公寓、出租房等服务休闲性场所，帮助用户解决引流锁客、业务管理和智能控制三大核心问题。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

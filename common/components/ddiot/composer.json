@@ -1,0 +1,23 @@
+{
+    "name": "ddiot/sdk",
+    "description": "DDIOT SDK for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wang chunsheng",
+            "email": "2192138785@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ddiot\\": "ddiot/"
+        }
+    },
+    "minimum-stability": "stable"
+}

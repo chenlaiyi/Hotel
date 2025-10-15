@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>武夷山九曲绿地铂骊酒店 | 官方网站</title>
+  <meta name="description" content="武夷山九曲绿地铂骊酒店官方网站，提供客房预订、会议宴会、餐饮康体、目的地资讯等一站式服务。">
+  <style>
+    :root {
+      --primary: #0f5132;
+      --accent: #b28b50;
+      --light: #f8f6f2;
+      --dark: #1c1c1c;
+      --max-width: 1180px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Microsoft Yahei", sans-serif;
+      color: var(--dark);
+      background: #ffffff;
+    }
+    a { color: inherit; text-decoration: none; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(15,81,50,0.08);
+    }
+    .nav {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+    }
+    .nav-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: var(--primary);
+      text-transform: uppercase;
+    }
+    .nav-logo-img {
+      height: 48px;
+      width: auto;
+    }
+    .nav-brand span {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      color: #333;
+    }
+    .nav-menu a:hover { color: var(--primary); }
+    .hero {
+      position: relative;
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      background: linear-gradient(120deg, rgba(15, 81, 50, 0.75), rgba(0, 0, 0, 0.55)),
+                  url('attachment/hotelwuyi/hero_lobby.jpg') center/cover no-repeat;
+    }
+    .hero-content {
+      max-width: 720px;
+      padding: 0 24px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+    .hero p { line-height: 1.8; margin-bottom: 28px; font-size: 16px; }
+    .hero a {
+      display: inline-block;
+      padding: 12px 26px;
+      background: var(--accent);
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 600;
+      transition: transform .2s ease;
+    }
+    .hero-brand {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+    .hero-brand img {
+      height: 136px;
+      width: auto;
+      display: block;
+      filter: drop-shadow(0 8px 18px rgba(5, 20, 12, 0.4));
+    }
+    .hero a:hover { transform: translateY(-2px); }
+    section {
+      padding: 72px 24px;
+    }
+    .section-title {
+      max-width: var(--max-width);
+      margin: 0 auto 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 36px);
+      color: var(--primary);
+      letter-spacing: 2px;
+    }
+    .section-title p {
+      margin: 0;
+      color: #5c5c5c;
+      line-height: 1.8;
+    }
+    .grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      gap: 28px;
+    }
+    .grid-cols-3 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(15,81,50,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .card-body h3 {
+      margin: 0;
+      font-size: 20px;
+      color: var(--primary);
+      letter-spacing: 1px;
+    }
+    .card-body p {
+      margin: 0;
+      line-height: 1.75;
+      color: #505050;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(15,81,50,0.08);
+      border-radius: 999px;
+      color: var(--primary);
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .split-layout {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      align-items: center;
+    }
+    .split-layout img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 12px 28px rgba(15,81,50,0.12);
+    }
+    .split-layout article h3 {
+      margin: 0 0 16px;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .split-layout article p {
+      line-height: 1.8;
+      color: #4a4a4a;
+    }
+    .amenities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .amenity {
+      padding: 18px 20px;
+      background: var(--light);
+      border-radius: 16px;
+      border: 1px solid rgba(15,81,50,0.08);
+    }
+    .amenity h4 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: var(--primary);
+    }
+    .amenity p {
+      margin: 0;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .cta {
+      background: linear-gradient(120deg, rgba(15,81,50,0.92), rgba(5,38,24,0.85));
+      color: #fff;
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .cta h2 { font-size: clamp(26px, 4vw, 36px); margin-bottom: 18px; }
+    .cta p { line-height: 1.8; margin-bottom: 24px; }
+    .cta a {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #fff;
+      color: var(--primary);
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform .2s ease;
+    }
+    .cta a:hover { transform: translateY(-2px); }
+    footer {
+      background: #0c3520;
+      color: #b9d5c7;
+      padding: 32px 24px;
+    }
+    footer .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    footer p { margin: 0; font-size: 13px; line-height: 1.7; }
+    @media (max-width: 768px) {
+      .nav { flex-direction: column; gap: 12px; }
+      .nav-menu { flex-wrap: wrap; justify-content: center; }
+      .hero { min-height: 64vh; }
+      .hero-brand img { height: 112px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="img/logoW.png" alt="武夷山九曲绿地铂骊酒店 Logo" class="nav-logo-img" />
+        <span>武夷山九曲<br>绿地铂骊酒店</span>
+      </div>
+      <div class="nav-menu">
+        <a href="#rooms">客房与套房</a>
+        <a href="#meetings">会议与宴会</a>
+        <a href="#dining">餐饮康体</a>
+        <a href="#experience">度假体验</a>
+        <a href="#contact">联系预订</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-brand">
+        <img src="img/logoW_white.png" alt="武夷山九曲绿地铂骊酒店 Logo">
+      </div>
+      <h1>九曲溪畔 · 山水雅集</h1>
+      <p>酒店由中国工程院院士钟训正教授团队操刀设计，于 2 万平方米园林之间融合武夷茶文化、雅致客房与专业会议场景，令每一次入住都在山水光影之间舒展身心。</p>
+      <a href="#contact">预约您的旅程</a>
+    </div>
+  </section>
+
+  <section id="rooms">
+    <div class="section-title">
+      <h2>客房与套房</h2>
+      <p>六大房型涵盖商务差旅、亲子度假与高端会务需求，均配备高速网络、精选武夷岩茶及香氛睡眠服务。</p>
+    </div>
+    <div class="grid grid-cols-3">
+      <div class="card">
+        <img src="attachment/hotelwuyi/room_mountain.jpg" alt="山居双床房" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">30-35㎡ · 园林景观</span>
+          <h3>山居双床房</h3>
+          <p>1.2m 双床搭配山水色调软装，临窗可观茶园与庭院。配备胶囊咖啡机、精选岩茶及熏香服务，适合好友同行。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/room_cloud.jpg" alt="云栖大床房" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">30-35㎡ · 山景大床</span>
+          <h3>云栖大床房</h3>
+          <p>1.8m 睡眠系统与独立茶叙区，卫浴干湿分离，暖光镜与恒温花洒营造舒缓氛围，适合情侣及商务住客。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/room_suite.jpg" alt="云上复式清氧大床房" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">55㎡ · 复式雅居</span>
+          <h3>云上复式清氧大床房</h3>
+          <p>上下分层将会客与睡眠空间分离，设茶道区、步入式衣帽柜与蓝牙音响，适合长住或商务洽谈。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/room_family.jpg" alt="亲子房" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">约60㎡ · 亲子主题</span>
+          <h3>亲子房</h3>
+          <p>1.8m 大床搭配 1.3m 儿童床，配备故事投影、儿童洗护与玩具角，连通园景阳台，打造家庭度假时光。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/room_triple.jpg" alt="三人间" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">45㎡ · 友享空间</span>
+          <h3>三人间</h3>
+          <p>三张 1.3m 单床与充裕的收纳空间，卫浴配置双台盆与独立淋浴，贴合闺蜜或好友结伴出行需求。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/room_tianjing.jpg" alt="天境房" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">55㎡ · 景观大床</span>
+          <h3>天境房</h3>
+          <p>无遮挡山茶景观，内设洽谈吧台、可移动投影及 Butler 管家礼遇，是商务精英与高端旅客的私享之选。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="meetings" style="background: var(--light);">
+    <div class="section-title">
+      <h2>会议与宴会</h2>
+      <p>多功能会务中心囊括 100-387㎡ 不同规格场地，配备 LED 大屏、舞台灯光与会务管家，轻松驾驭峰会、婚礼与品牌发布。</p>
+    </div>
+    <div class="grid grid-cols-3">
+      <div class="card">
+        <img src="attachment/hotelwuyi/meeting_tianjing.jpg" alt="天境A多功能厅" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">387㎡ · 剧院式 400 人</span>
+          <h3>天境A多功能厅</h3>
+          <p>自带 6.5m×3.62m LED 幕墙与 4m×8.13m 舞台，支持灯光秀、T 台与婚礼布置，是大型峰会与盛典宴会主场。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/meeting_executiveA.png" alt="行政A厅" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">200㎡ · 课桌式 120 人</span>
+          <h3>行政A厅</h3>
+          <p>带 4.3m×2.5m LED 屏与分区音响，适合企业培训、产品发布及路演活动，可搭配定制茶歇与摄影服务。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/meeting_executiveB.jpg" alt="行政B厅" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">100㎡ · 雅致会谈空间</span>
+          <h3>行政B厅</h3>
+          <p>灵活调节课桌或会谈式布局，支持董事会、签约仪式、私享发布等高端场景，配备同声传译与高清投影。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dining">
+    <div class="split-layout">
+      <img src="attachment/hotelwuyi/dining_hall.jpg" alt="餐饮空间" loading="lazy" decoding="async">
+      <article>
+        <h3>闽味私房 · 中餐厅</h3>
+        <p>主厨团队精选武夷山时令食材，推出岩茶宴、闽粤融合及定制菜单。262 个开放餐位与 3 间尊享包厢，可承接商务宴请、婚礼喜宴与家庭聚会。</p>
+        <p>贴心提供素食、儿童餐、过敏原标识，并可搭配侍茶师手冲岩茶，为宾客打造沉浸式味蕾之旅。</p>
+      </article>
+    </div>
+  </section>
+
+  <section style="background: var(--light);">
+    <div class="section-title">
+      <h2>康体与休闲</h2>
+      <p>多元康体配置帮助宾客在旅途间焕发活力：恒温泳池、24 小时健身房、棋牌茶室与园林步道均随时开放。</p>
+    </div>
+    <div class="grid grid-cols-3">
+      <div class="card">
+        <img src="attachment/hotelwuyi/pool.jpg" alt="恒温泳池" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">恒温泳池</span>
+          <p>低氯循环水系统与亲子浅水区，伴随玻璃穹顶引入自然采光，为晨泳与亲子戏水营造舒心场域。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/gym.jpg" alt="健身房" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">全天候健身房</span>
+          <p>配备有氧跑步机、力量训练器械与瑜伽垫，另设私人教练预约与体能评估服务，助力旅途保持状态。</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="attachment/hotelwuyi/garden.jpg" alt="园林庭院" loading="lazy" decoding="async">
+        <div class="card-body">
+          <span class="badge">园林步道</span>
+          <p>漫步茶园与溪畔花径，参与晨间太极、茶园冥想及夜间灯光游园，沉浸式体验武夷山自然诗意。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="split-layout" style="align-items: start;">
+      <article>
+        <h3>目的地体验</h3>
+        <p>酒店步行约 5 分钟抵九曲溪竹筏码头，毗邻遇林亭窑址、天上宫、白云寺等文化景点。我们可为您安排茶园研学、岩茶大师班、星空露天影院等主题活动。</p>
+        <div class="amenities" style="margin-top: 24px;">
+          <div class="amenity">
+            <h4>交通指引</h4>
+            <p>距武夷山北站约 15 分钟车程，距武夷山机场约 25 分钟。酒店提供预约接驳与定制包车服务。</p>
+          </div>
+          <div class="amenity">
+            <h4>茶文化体验</h4>
+            <p>岩茶品鉴、手作香囊、茶点制作课程，让旅程充满茶香记忆。</p>
+          </div>
+          <div class="amenity">
+            <h4>旅拍 &amp; 婚礼</h4>
+            <p>园林、庭院、手绘地图等独特场景，可承接婚礼旅拍与求婚布置，配套专业策划团队。</p>
+          </div>
+        </div>
+      </article>
+      <img src="attachment/hotelwuyi/breakfast.jpg" alt="早餐厅" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>开启武夷山的惬意旅程</h2>
+    <p>电话：0599-1234567 ｜ 邮箱：reservation@qubehui.com<br>地址：福建省南平市武夷山市九曲溪路 1 号</p>
+    <a href="tel:05991234567">立即拨打预订</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <p>© 2025 武夷山九曲绿地铂骊酒店 · 版权所有</p>
+      <p>酒店地址：福建省南平市武夷山市九曲溪路 1 号 ｜ 酒店预订：0599-1234567 ｜ 企业微信：微信搜索“武夷山铂骊酒店”</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+[submodule "public/dd-admin"]
+    path = public/dd-admin
+    url = <你实际使用的仓库URL>
